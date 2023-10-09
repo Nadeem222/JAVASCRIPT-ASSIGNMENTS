@@ -47,33 +47,27 @@ function showAlert() {
 
 // funxtion for print in html 
 window.addEventListener('load', function() {
-    var studentName = document.getElementById('name');
-    var fatherName = document.getElementById('fName');
-    var age = document.getElementById('age');
-    var phoneNumber = document.getElementById('phone');
-    var email = document.getElementById('email');
-
-    document.querySelector("#name").innerHTML = "Syed Nadeem Ali"
-    fatherName.textContent = "Abdul Hakeem";
-    age.textContent = "30";
-    phoneNumber.textContent = "0312-8892462";
-    email.textContent = "syednadeemali221@gmail.com";
-
-});
-// function for print in console
     var studentName = "Syed Nadeem Ali";
     var fatherName = 'ABdul Hakeem';
     var age = "30 Year"
     var email = "syednadeemali221@gmail.com"
     var phoneNumber = '03128892462';
-
     
-
+    
+    
     console.log("Name :" + " " + studentName);
     console.log("Fahter Name :" + " " + fatherName);
     console.log('Age :' + " " + age);
     console.log('Mobile :' +  " " + phoneNumber);
     console.log('Email :' + email);
+
+    document.querySelector("#name").innerHTML = studentName;
+    document.querySelector("#fName").innerHTML = fatherName;
+    document.querySelector("#age").innerHTML = age;
+    document.querySelector("#phone").innerHTML = phoneNumber;
+    document.querySelector("#email").innerHTML = email;
+
+});
 
 
 // question 5
@@ -97,7 +91,7 @@ alert("My email address is" + " " + question6);
 
 var question7 = "A Smarter Way to learn javaScript"
 
-alert("I am Trying to Learn" + question7);
+alert("I am Trying to Learn" + " "+ question7);
 
 var question9 = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
 alert(question9);
