@@ -1,2 +1,2 @@
-# JAVASCRIPT-ASSIGNMENTST
-This repo for my javascript class assignment 
+# JAVASCRIPT-ASSIGNMENTS
+This repo is for my javascript class assignment 
