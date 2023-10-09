@@ -1,5 +1,5 @@
 
-// alert("Hi! Welcome to Page. ")
+alert("Hi! Welcome to Page. ")
 
 // alert("Welcome to JS land... \n Happy Coding!")
 
@@ -78,7 +78,36 @@ window.addEventListener('load', function() {
 
 // question 5
 
+
+// function for print in alert box
 var pizza = "pizza\npizz\npiz\npi\np";
 
 alert(pizza);
+
+// function for print in console
+console.log(pizza);
+// function for print in html
+var pizza = document.getElementById("pizza");
+
+document.querySelector("#pizza").innerHTML = "pizza<br>pizz<br>piz<br>pi<br>p";
+
+var question6 = "syednadeemali221@gmail.com";
+
+alert("My email address is" + " " + question6);
+
+var question7 = "A Smarter Way to learn javaScript"
+
+alert("I am Trying to Learn" + question7);
+
+var question9 = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
+alert(question9);
+
+// function for print in HTML
+document.querySelector("#q-6").innerHTML = ` My email address is  ${question6}`;
+document.querySelector("#q-7").innerHTML = `i am trying to learn ${question7}`;
+document.querySelector("#q-8").innerHTML = "Yeah! I can write HTML content through javaScript";
+document.querySelector("#q-9").innerHTML = question9;
+
+
+
 

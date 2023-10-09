@@ -10,8 +10,11 @@
         }
 
         .container {
-            height: 100VH;
-            width: 100%;
+            
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 20px;
         }
         h1{
             display: flex;
@@ -27,13 +30,42 @@
             box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
             text-align: center;
             padding: 30px;
+            padding-right: 5px;
+        }
+        form{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        form>p{
+            margin: 5px;
+        }
+        #pizza{
+            text-align: start;
+            color: red;
+            font-size: 15px;
+            font-weight: 800;
+        }
+        h3{
+            text-align: start;
+            margin: 5px 0px;
+        }
+        h5 , h4 ,h3 , p{
+            margin: 5px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 800;
         }
     </style>
 </head>
 
 <body>
+    <h1>JavaScript Assigment 1</h1>
     <div class="container">
-        <h1>JavaScript Assigment 1</h1>
         <div class="chapter-1">
             <h4>Chapter One <span>(Alert)</span></h4>
 
@@ -53,7 +85,7 @@
 
 
 
-            <form>
+            <form >
                 <p>Name : <span id="name"></span></p>
                 <p>Father Name : <span id="fName"></span></p>
                 <p>Age : <span id="age"></span></p>
@@ -61,6 +93,23 @@
                 <p>Email : <span id="email"></span></p>
 
             </form>
+        </div>
+        <div class="chapter-1 q-5">
+            <h4>Chapter Two <span>(String variables)</span></h4>
+            <h5>Question 5</h5>
+            <h3>Answer :-</h3>
+            <div id="pizza"></div>
+        </div>
+        <div class="chapter-1" style="text-align: start;">
+            <h4>Chapter Two <span>(String variables)</span></h4>
+            <h3>Q-6</h3>
+            <p>Answer :- <span id="q-6"></span></p>
+            <h3>Q-7</h3>
+            <p>Answer :- <span id="q-7"></span></p>
+            <h3>Q-8</h3>
+            <p>Answer :- <span id="q-8"></span></p>
+            <h3>Q-9</h3>
+            <p>Answer :- <span id="q-9"></span></p>
         </div>
     </div>
 
