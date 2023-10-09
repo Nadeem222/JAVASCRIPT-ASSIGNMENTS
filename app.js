@@ -1,5 +1,5 @@
 
-alert("Hi! Welcome to Page. ")
+alert("Hi! Welcome to My Page. ")
 
 // alert("Welcome to JS land... \n Happy Coding!")
 
