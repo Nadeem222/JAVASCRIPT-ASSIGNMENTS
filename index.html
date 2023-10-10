@@ -4,35 +4,49 @@
 <head>
     <title>Checkbox Prevent Dialog Example</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
         body {
             margin: 0;
             padding: 0;
+            /* background: linear-gradient(#090979, #00d4ff); */
+            background: rgb(255, 249, 237);
+            background: linear-gradient(0deg, rgba(255, 249, 237, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 0%);
+            opacity: .5;
+            color: #FFF;
         }
 
         .container {
-            
+
             display: flex;
             gap: 10px;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             padding: 20px;
+
         }
-        h1{
+
+        h1 {
             display: flex;
             justify-content: center;
+            font-size: 80px;
+            font-family: 'Archivo Black', sans-serif;
         }
-        span{
+
+        span {
             color: red;
         }
-        .chapter-1{
+
+        .chapter-1 {
             margin: 0 auto;
             width: 400px;
-            height: 200px;
+            height: 250px;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
             text-align: center;
             padding: 30px;
             padding-right: 5px;
+            background: rgba(17, 17, 26, 1);
         }
-        form{
+
+        form {
             display: flex;
             justify-content: start;
             flex-direction: column;
@@ -40,23 +54,31 @@
             font-size: 15px;
             font-weight: 700;
         }
-        form>p{
+
+        form>p {
             margin: 5px;
         }
-        #pizza{
+
+        #pizza {
             text-align: start;
             color: red;
             font-size: 15px;
             font-weight: 800;
         }
-        h3{
+
+        h3 {
             text-align: start;
             margin: 5px 0px;
         }
-        h5 , h4 ,h3 , p{
+
+        h5,
+        h4,
+        h3,
+        p {
             margin: 5px;
         }
-        p{
+
+        p {
             font-size: 14px;
             font-weight: 800;
         }
@@ -68,9 +90,6 @@
     <div class="container">
         <div class="chapter-1">
             <h4>Chapter One <span>(Alert)</span></h4>
-
-
-
             <label for="Question-2">Question-2:</label>
             <input type="checkbox" id="Question-2">
             <button onclick="showAlert()">Show Alert</button>
@@ -85,7 +104,7 @@
 
 
 
-            <form >
+            <form>
                 <p>Name : <span id="name"></span></p>
                 <p>Father Name : <span id="fName"></span></p>
                 <p>Age : <span id="age"></span></p>
@@ -101,7 +120,7 @@
             <div id="pizza"></div>
         </div>
         <div class="chapter-1" style="text-align: start;">
-            <h4>Chapter Two <span>(String variables)</span></h4>
+            <h4 style="text-align: center;">Chapter Two <span>(String variables)</span></h4>
             <h3>Q-6</h3>
             <p>Answer :- <span id="q-6"></span></p>
             <h3>Q-7</h3>
@@ -110,6 +129,17 @@
             <p>Answer :- <span id="q-8"></span></p>
             <h3>Q-9</h3>
             <p>Answer :- <span id="q-9"></span></p>
+        </div>
+        <div class="chapter-1" style="text-align: start;">
+            <h4 style="text-align: center;">Chapter Three <span>(Variables for Number)</span></h4>
+            <h3>Q-6</h3>
+            <p>Answer :- <span id="chp-3-q-1"></span></p>
+            <h3>Q-7</h3>
+            <p>Answer :- <span id="visit-count"></span></p>
+            <h3>Q-8</h3>
+            <p>Answer :- <span id="chp-3-q-3"></span></p>
+            <h3>Q-9</h3>
+            <p>Answer :- <span id="chp-3-q-4"></span></p>
         </div>
     </div>
 
