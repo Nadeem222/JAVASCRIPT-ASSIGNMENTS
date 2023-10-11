@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkbox Prevent Dialog Example</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
         body {
             margin: 0;
             padding: 0;
-            /* background: linear-gradient(#090979, #00d4ff); */
             background: rgb(255, 249, 237);
             background: linear-gradient(0deg, rgba(255, 249, 237, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 0%);
             opacity: .5;
@@ -19,15 +22,16 @@
 
             display: flex;
             gap: 10px;
-            /* flex-wrap: wrap; */
+            flex-wrap: wrap;
             padding: 20px;
+            justify-content: center;
 
         }
 
         h1 {
             display: flex;
             justify-content: center;
-            font-size: 80px;
+            font-size: 60px;
             font-family: 'Archivo Black', sans-serif;
         }
 
@@ -36,9 +40,7 @@
         }
 
         .chapter-1 {
-            margin: 0 auto;
-            width: 400px;
-            height: 250px;
+            width: 350px;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
             text-align: center;
             padding: 30px;
@@ -69,6 +71,7 @@
         h3 {
             text-align: start;
             margin: 5px 0px;
+            font-size: 15px;
         }
 
         h5,
@@ -79,8 +82,36 @@
         }
 
         p {
-            font-size: 14px;
-            font-weight: 800;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: 'Archivo Black', sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.5s ease-out;
+            
+        }
+        button:hover{
+            background: linear-gradient(to right bottom, red , blue );
+            color: #FFF;
+        }
+        
+
+
+        @media screen and (max-width: 768px) {
+            .chapter-1 {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
         }
     </style>
 </head>
@@ -88,18 +119,21 @@
 <body>
     <h1>JavaScript Assigment 1</h1>
     <div class="container">
-        <div class="chapter-1">
+
+        <div class="chapter-1 ">
             <h4>Chapter One <span>(Alert)</span></h4>
             <label for="Question-2">Question-2:</label>
             <input type="checkbox" id="Question-2">
             <button onclick="showAlert()">Show Alert</button>
+            <br>
+            <br>
             <br>
             <label for="Question-3">Question-3:</label>
             <input type="checkbox" id="Question-3">
             <button onclick="showAlert()">Show Alert</button>
             <br>
         </div>
-        <div class="chapter-1">
+        <div class="chapter-1 ">
             <h4>Chapter Two <span>(String variables)</span></h4>
 
 
@@ -119,6 +153,7 @@
             <h3>Answer :-</h3>
             <div id="pizza"></div>
         </div>
+
         <div class="chapter-1" style="text-align: start;">
             <h4 style="text-align: center;">Chapter Two <span>(String variables)</span></h4>
             <h3>Q-6</h3>
@@ -130,7 +165,7 @@
             <h3>Q-9</h3>
             <p>Answer :- <span id="q-9"></span></p>
         </div>
-        <div class="chapter-1" style="text-align: start;">
+        <div class="chapter-1 " style="text-align: start; font-size: 14px;">
             <h4 style="text-align: center;">Chapter Three <span>(Variables for Number)</span></h4>
             <h3>Q-6</h3>
             <p>Answer :- <span id="chp-3-q-1"></span></p>
