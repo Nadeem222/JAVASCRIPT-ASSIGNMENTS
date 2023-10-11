@@ -149,3 +149,38 @@ var message = visitorName + " ordered " + quantity + " " + productTitle + "(s) o
 console.log(message);
 
 document.querySelector('#chp-3-q-4').innerHTML = message;
+
+// Chapter 4
+
+var vairable1 , variable2 , variable3;
+
+// legal variables name
+
+var myName;
+var $myName;
+var _myName;
+var camelCaseMyName;
+var name123;
+
+
+// Illegal variable name
+// Note: these variables name not working in javascript
+
+// var 123MyName; // you can not make variable using number in start
+// var my-Name; // you can not make variable using (-)
+// var my Name; // you can not make variable using space between variable name
+// var my&Name; // you can not make variable using special character etc (& * # )
+// var break; // you can not make variable using reserve key word
+
+
+document.querySelector('#rules').innerHTML = ('Rules for naming JS variables');
+
+var optA = "number, letter, $ and _"
+var optB = "letter, $ or _"
+var optC = "Sensitive"
+var optD = "KeyWord"
+
+document.querySelector("#opt-a").innerHTML= ('b) Variable names can only contain' +" " + optA + ".For example: &my_1stVariable")
+document.querySelector("#opt-b").innerHTML= ('c) Variables must begin with a' +" " + optB + ".For example: $name, _name or name")
+document.querySelector("#opt-c").innerHTML= ('d) Variable names are case' + " " + optC)
+document.querySelector("#opt-d").innerHTML= ('e) Variable names should not be JS' + " " + optD)
